@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  resources :articles, only: [:index]
   resources :monkeys, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
